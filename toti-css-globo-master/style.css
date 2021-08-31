@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+nav {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid hsla(0,0%,51%,.3);
+    margin-bottom: 40px;
+}
+main {
+    max-width: 1320px;
+    margin: auto;
+}
+.google-ads {
+    width: 1320px;
+    height: 250px;
+    background: hsla(0,0%,51%,.3);
+    margin-bottom: 40px;
+}
+.google-ads img {
+    width: 100%;
+    height: 100%;
+}
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "politica politica esportes bbb";
+}
+.politica {
+    grid-area: politica;
+    padding-right: 38px;
+    color: #c4170c;
+}
+.esportes {
+    grid-area: esportes;
+    padding-right: 38px;
+    padding-left: 38px;
+    border-left: 1px solid hsla(0,0%,51%,.3);
+    border-right: 1px solid hsla(0,0%,51%,.3);
+    color: #06aa48;
+}
+.bbb {
+    grid-area: bbb;
+    padding-left: 38px;
+    padding-right: 38px;
+    color: #ec7d00;
+}
+
+
+.noticia {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+.noticia img {
+    display: block;
+    width: 100%;
+    height: 131px;
+    object-fit: cover;
+    object-position: center;
+}
+.noticia.destaque {
+    font-size: 1.375rem;
+    line-height: 1.25;
+    letter-spacing: -.04em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.noticia.comum {
+    display: flex;
+    margin-bottom: 8px;
+}
+.noticia.comum::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background: #909090;
+    display: inline-block;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.4em;
+    margin-right: 8px;
+}
+
+.politica_destaque {
+    font-weight: bold;
+    padding-bottom: 24px;
+}
+.politica_destaque .noticia.noticia.destaque {
+    font-size: 3.5rem;
+    margin-bottom: 24px
+}
+.politica_news {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid hsla(0,0%,51%,.3);
+}
+.politica_news .noticia {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bbb div + div, 
+.esportes div + div {
+    margin-top: 40px;
+}
