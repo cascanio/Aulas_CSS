@@ -17,8 +17,28 @@
 ● Fontes ● CDN ● Estilizando Fontes
 Exercicio: Estilizar a pagina da receita do módulo HTML. Estilizar tipo, cor, peso de fontes, altura de linha com base no layout (https://xd.adobe.com/view/736f769e-26ca-43fc-8c21-4fc9055e26e3-263c/)
 
+https://github.com/cascanio/Aulas_CSS/tree/main/aula4
 
 ## Aula 5:
 ### Conceitos:
-● Fontes ● CDN ● Estilizando Fontes
+● Box-Model: ● Margin ● Border ● Padding 
+
+## Aula 6:
+### Conceitos:
+● Display: Block vs. Inline vs. Inline-Block
+
+● Position: Relative vs Absolute vs Fixed
+
+● Float
+
+
+## Aula 7:
+### Conceitos:
+● Flexbox: ● Flex Container ● Flex Item
+
+Pratica de estilização Pagina Globo - Aula ao vivo: https://github.com/cascanio/Aulas_CSS/tree/main/toti-css-globo-master
+
+
+
+
 
