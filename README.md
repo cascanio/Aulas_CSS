@@ -36,7 +36,9 @@ https://github.com/cascanio/Aulas_CSS/tree/main/aula4
 ### Conceitos:
 ● Flexbox: ● Flex Container ● Flex Item
 
-Pratica de estilização Pagina Globo - Aula ao vivo: https://github.com/cascanio/Aulas_CSS/tree/main/toti-css-globo-master
+● Pratica de estilização Pagina Globo - Aula ao vivo: https://github.com/cascanio/Aulas_CSS/tree/main/toti-css-globo-master
+
+● Estilização do HTML aula6: https://github.com/cascanio/Aulas_CSS/tree/main/aula7
 
 
 
