@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90px, 20px, 0px;
+}
+
+.header {
+    background-color: #492A23;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px; /*numero baseado no breakpoint Large de bootstrap */
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}   
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover, .nav-menu-link_active {
+    background-color: #ad533f;
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border:none;
+    font-size: 30px;
+    padding: 0px 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+.capa {
+    width: 100%;
+    height: 60vh;
+    background-image: url('./img/rosasrosas.jpg');
+    /* max-width: 100%; */
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainartigos {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.artigo {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.secondaryartigos {
+    display: grid;
+    grid: auto / 400px 400px auto;
+    grid-gap: 10px;
+    background-color: #492A23;
+    padding: 10px;
+}
+
+.column {
+    text-align: left;
+    padding: 30px;
+    color:#ad533f;
+}
+
+.c12 {
+    display: flex;
+    padding: 5px 0px 15px;
+    font-size: 12px;
+    color: #a87f76;
+    align-items:flex-start; 
+    justify-items: left;
+    text-align: justify;
+}
+
+.c12 > p {
+    padding-left: 10px;
+}
+
+.c3 {
+    padding: 5px 0px 15px;
+    width: 550px;
+    font-size: 12px;
+    color: #9e9491;
+    align-items: center;
+    justify-items: left;
+    text-align: justify;
+}
+
+.c3 > p {
+    padding-top: 10px;
+}
+
+h3 {
+    padding-bottom: 15px;
+    color:#ad533f;
+}
+
+.aside-container {
+    display: grid;
+    grid: auto / auto 500px;
+    grid-gap: 30px;
+    padding: 20px 60px 20px 0px;
+    background-color: #271612;
+}
+
+.aside-item {
+    line-height: 30px;
+    text-align: justify;
+    padding: 30px;
+}
+
+.aside-item > p, li {
+    color:#a87f76;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    color:black;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 90px, 20px, 0px;
+        padding-top: 70px;
+    }
+    
+    .header {
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #ad533f;
+        position:fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px); /*Calculo para adjustar ao tamanho da pagina menos o tamanho do navbar*/
+        overflow-y: auto; /*para agregar barra de scroll*/
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item {
+        line-height: 70px;
+        text-transform: uppercase;
+        width: max-content;
+    }   
+    
+    .nav-menu-link:hover, .nav-menu-link_active {
+        background: none;
+        color: #a7938e
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    .capa {
+        margin-top: -10px;
+        width: 100%;
+    }
+}
