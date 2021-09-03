@@ -71,13 +71,12 @@ body {
 }
 
 .capa {
-    width: 100%;
-    height: 60vh;
-    background-image: url('./img/rosasrosas.jpg');
-    /* max-width: 100%; */
-    /* background-position: center center; */
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0 auto;
+    max-width: 1496px;
+    height: auto;
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
 
 .mainartigos {
@@ -169,6 +168,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .capa {
+        margin-top: -10px;
+    }
+
     body {
         padding: 90px, 20px, 0px;
         padding-top: 70px;
@@ -223,8 +226,4 @@ footer {
         outline: none;
     }
 
-    .capa {
-        margin-top: -10px;
-        width: 100%;
-    }
 }
