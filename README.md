@@ -40,7 +40,11 @@ https://github.com/cascanio/Aulas_CSS/tree/main/aula4
 
 ● Estilização do HTML aula6: https://github.com/cascanio/Aulas_CSS/tree/main/aula7
 
+## Aula 7:
+### Conceitos:
+● Layout responsivo
 
+● Pratica com exercicio da Aula 7 CCS: https://github.com/cascanio/Aulas_CSS/tree/main/aula7
 
 
 
